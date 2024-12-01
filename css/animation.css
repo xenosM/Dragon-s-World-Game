@@ -14,7 +14,9 @@
     bottom: 3rem;
   }
   50% {
-    bottom: 18rem;
+    bottom: 21rem;
+  }
+  75% {
   }
   100% {
     bottom: 3rem;
