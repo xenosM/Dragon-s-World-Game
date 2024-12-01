@@ -42,16 +42,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: red 1px solid;
-  animation: jump 0.5s ease-in-out;
 }
 #obstacle {
   bottom: 3rem;
   right: 3rem;
-  height: 11rem;
-  width: 14rem;
+  height: 9rem;
+  width: 12rem;
   background-image: url(../images/obstacle.png);
   background-size: cover;
   background-repeat: no-repeat;
   border: red 1px solid;
-  /* animation: obstacle_move 3s linear infinite; */
+  animation: obstacle_move 3s linear infinite;
+}
+
+.dragon_jump {
+  animation: jump 1s ease-out;
 }
