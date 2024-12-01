@@ -1,0 +1,22 @@
+@keyframes obstacle_move {
+  0% {
+    right: -10rem;
+  }
+  50% {
+    right: 50%;
+  }
+  100% {
+    right: 110%;
+  }
+}
+@keyframes jump {
+  0% {
+    bottom: 3rem;
+  }
+  50% {
+    bottom: 18rem;
+  }
+  100% {
+    bottom: 3rem;
+  }
+}
