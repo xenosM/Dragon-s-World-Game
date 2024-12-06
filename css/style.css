@@ -20,18 +20,55 @@ body {
   background-size: cover;
 }
 #score {
-  font-size: var(--size-xl);
+  font-size: var(--size-3xl);
   margin-left: 3rem;
   margin-top: 1rem;
 }
-#gameover {
+.btn {
+  color: white;
+  background-color: black;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+}
+#restart_btn {
+  right: 3rem;
+  top: 3rem;
+  background-color: brown;
+}
+
+#gameover,
+#gamepause {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: var(--size-7xl);
-  background-color: rgb(122, 10, 10);
   padding: 2rem;
   border-radius: 10px;
+  text-align: center;
+}
+#gameover {
+  background-color: rgb(122, 10, 10);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; */
+  #game_restart_btn,
+  #gameover_score {
+    position: relative;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  #game_restart_btn {
+    width: 8rem;
+    margin: 0 auto;
+  }
+  #gameover_score {
+    color: yellow;
+    font-size: var(--size-3xl);
+  }
+}
+#gamepause {
+  background-color: rgb(8, 99, 225);
 }
 #dragon {
   bottom: 3rem;
@@ -41,7 +78,6 @@ body {
   background-image: url(../images/dragon.png);
   background-size: cover;
   background-repeat: no-repeat;
-  border: red 1px solid;
 }
 #obstacle {
   bottom: 3rem;
@@ -51,10 +87,13 @@ body {
   background-image: url(../images/obstacle.png);
   background-size: cover;
   background-repeat: no-repeat;
-  border: red 1px solid;
+}
+.animate_obstacle {
   animation: obstacle_move 3s linear infinite;
 }
-
+.obstacle_left {
+  left: 1000px;
+}
 .dragon_jump {
   animation: jump 1s ease-out;
 }

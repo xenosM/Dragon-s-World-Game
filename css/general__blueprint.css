@@ -50,5 +50,5 @@ li {
 }
 /* PROJECT GENERAL STYLING */
 .hidden {
-  display: none;
+  display: none !important;
 }
